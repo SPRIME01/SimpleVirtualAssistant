@@ -8,7 +8,6 @@
  * @package	SimpleVirtualAssistant
  * @version Selena 1.0
  * 
- * github: https://bl4de@bitbucket.org/bl4de/simplevirtualassistant.git
  * 
  */
 
