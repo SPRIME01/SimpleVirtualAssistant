@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Simple Virtual Assistant</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/svassistant.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script>
+
+	    $(document).ready(function() {
+		Selena.SelenaRun();
+	    });
+
+        </script>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/sva.css" />
+
+    </head>
+
+    <body>
+	<div class="container" style="margin-bottom: 120px;">
+
+	    <!-- 
+		Selena enabler 
+	    -->
+	    <div class="sva-enabler" style="/*display: none*/">
+		<i class="btn btn-small" style="width: 40px; background-repeat: no-repeat; background-position: left;
+		   background-size: contain; background-image:url('assistant/assistant.jpg'); ">
+		    <a class="icon-arrow-down" title="show Assistant"></a>
+		</i>
+	    </div>
+	    <!-- 
+			    Selena enabler 
+	    -->
+
+
+
+
+	    <!-- 
+     
+		Selena permanent hiden modal window - shows only on 'mouseover' events
+	    
+	    -->
+	    <div class="modal sva-minimized" style="display: none">
+		<div class="modal-body">
+		    <div class="img-container">
+			<img src="assistant/assistant.jpg" />
+		    </div>
+		    <div class="well response">
+			Hello, my name is Selena, and I'm Your Virtual Assistant :)
+		    </div>
+		</div>
+	    </div>
+	    <!-- permanent hiden assistant modal window - shows only on mouseover-->
+	</div>
+
+
+
+
+
+	<!--
+ 
+	    Selena visible modal window
+	
+	-->	
+	<div class="modal sva-modal"  style="display: none">
+	    <div class="modal-header">
+		<i class="sva-hidder btn btn-small"><a class="icon-arrow-up" title="hide Assistant"></a></i>
+	    </div>
+	    <div class="modal-body">
+		<div class="img-container">
+		    <img src="assistant/assistant.jpg" />
+		</div>
+		<div class="well response">
+		    Hello, my name is Selena, and I'm Your Virtual Assistant :)
+		</div>
+	    </div>
+	    <div class="modal-footer">
+		<a class="footer-text">
+		    <span>S</span>imple
+		    <span>V</span>irtual
+		    <span>A</span>ssistant &copy;2012 | bl4de
+		</a>
+	    </div>
+	</div>
+	<!--assistant modal window-->
+
+
+
+	<div class="container" style="height: 120px;">
+	    Try to put Your cursor over question marks:
+	</div>
+	<div class="container">
+	    <div class="well"><i class="sva-sample01 icon-question-sign"></i> This is sample problem... Please, put Your mouse over question-sign icon :P</div>
+	</div>
+
+	<div class="container">
+	    <div class="well"><i class="sva-sample02 icon-question-sign"></i> This is another problem... Let Selena resolves it...</div>
+	</div>
+
+
+
+
+
+    </body>
+</html>

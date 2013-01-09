@@ -1,0 +1,115 @@
+SELENA - Simple Virtual Assistant
+
+SAV is a very simple application implementing tooltips as a virtual assistant.
+Requires jQuery, jQuery cookie plugin and Twitter Bootstrap (all included).
+
+--------------------------------------------------------------------------------
+1. Running Selena
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/svassistant.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready( function() {
+	Selena.SelenaRun();
+    });
+</script>
+
+--------------------------------------------------------------------------------
+2. Hide Selena's modal window
+
+$('.sva-hidder').click( function()
+
+--------------------------------------------------------------------------------
+3. Show Selena's modal window:
+
+$('.sva-enabler i').click( function()
+
+--------------------------------------------------------------------------------
+4. Change Selena's text:
+
+$('.response').html( "response text here..." );
+
+--------------------------------------------------------------------------------
+5. changing Selena's response text:
+
+<div class="sva-[class name]">hoover me!</div>
+
+where: [class name] - corresponding to <id> element in .xml file with Selena's phrases:
+
+-- sample.xml --
+<items>
+    <item>
+	<id>sample01</id>
+	<text>This is sample solution for Your problem number 1</text>
+    </item>
+    <item>
+	<id>sample02</id>
+	<text>This is my proposition for problem number 2 :)</text>
+    </item>
+</items>
+
+
+--------------------------------------------------------------------------------
+6. Selena's modal windows:
+
+    a) full-size:
+
+	<!--
+ 
+	    Selena visible modal window
+	
+	-->	
+	<div class="modal sva-modal"  style="display: none">
+	     <div class="modal-header">
+		<i class="sva-hidder btn btn-small"><a class="icon-arrow-up" title="hide Assistant"></a></i>
+	    </div>
+	    <div class="modal-body">
+		<div class="img-container">
+		    <img src="assistant/assistant.jpg" />
+		</div>
+		<div class="well response">
+		    Hello, my name is Selena, and I'm Your Virtual Assistant :)
+		</div>
+	    </div>
+	    <div class="modal-footer">
+		<a class="footer-text">
+		    <span>S</span>imple
+		    <span>V</span>irtual
+		    <span>A</span>ssistant &copy;2012 | bl4de
+		</a>
+	    </div>
+	</div>
+	<!--assistant modal window-->
+
+
+    b) hidden:
+
+
+	<!-- 
+
+	    Selena permanent hiden modal window - shows only on 'mouseover' events
+
+	-->
+	<div class="modal sva-minimized" style="display: none">
+	    <div class="modal-body">
+		<div class="img-container">
+		    <img src="assistant/assistant.jpg" />
+		</div>
+		<div class="well response">
+		    Hello, my name is Selena, and I'm Your Virtual Assistant :)
+		</div>
+	    </div>
+	</div>
+	<!-- permanent hiden assistant modal window - shows only on mouseover-->
+
+--------------------------------------------------------------------------------
+
+7. Selena's styles: sva.css
+
+--------------------------------------------------------------------------------
+
+8. Future features:
+- 

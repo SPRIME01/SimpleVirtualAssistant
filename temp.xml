@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+sample virtual assistant XML file
+-->
+<items>
+    <item>
+	<id>sample01</id>
+	<text>This is sample solution for Your problem number 1</text>
+    </item>
+    <item>
+	<id>sample02</id>
+	<text>This is my proposition for problem number 2 :)</text>
+    </item>
+</items>

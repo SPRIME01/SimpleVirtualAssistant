@@ -1,0 +1,24 @@
+/* 
+  * Simple Virtual Assistant
+ * 
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ *
+ * @author bl4de bloorq@gmail.com
+ * @package	SimpleVirtualAssistant
+ * @version Selena 1.0
+ * 
+ * github: https://bl4de@bitbucket.org/bl4de/simplevirtualassistant.git
+
+*/
+.sva-modal {  width:360px; height: auto; position: fixed; left:1080px; top:300px;}
+.sva-minimized {  width:360px; height: auto;  left:40px; top:10px;margin: 0;}
+.sva-enabler { position: fixed; }
+.footer-text { text-decoration: none; font-size: 10px; color: #222; }
+.footer-text span {font-weight: bold; color: #f00;}
+.response { font-size: 12px; color: #222;  }
+.modal-body img {margin-bottom: 10px; width: 230px; }
+.modal-body .img-container { text-align: center}
+
+.sva-minimized .modal-body img {margin: 4px; width: 60px; float: left; }
+.sva-minimized .modal-body .img-container { text-align: left}
