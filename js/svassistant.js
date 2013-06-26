@@ -11,9 +11,9 @@
  * 
  */
 
-
 Selena = {};
 Selena.SelenaRun = function() {
+"use strict";
 
     //Selena's visibility cookie name
     Selena.cookieName = "sva_hidden";
